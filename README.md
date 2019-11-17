@@ -47,36 +47,36 @@
 
 ### 登录成功主页
 
-![](C:\Users\88487\Desktop\项目图片\成功登录主页.png)
+![](https://github.com/Fdaxiong/Tkphp/blob/master/img/成功登录主页.png)
 
 
 
 ### 购物页面
 
-![](C:\Users\88487\Desktop\项目图片\购物.png)
+![](https://github.com/Fdaxiong/Tkphp/blob/master/img/购物.png)
 
-![](C:\Users\88487\Desktop\项目图片\购物主页-简陋轮番图.png)
+![](https://github.com/Fdaxiong/Tkphp/blob/master/img/购物主页-简陋轮番图.png)
 
-![](C:\Users\88487\Desktop\项目图片\商品图.png)
+![](https://github.com/Fdaxiong/Tkphp/blob/master/img/项目图片\商品图.png)
 
 
 
-​	![](C:\Users\88487\Desktop\项目图片\ajax加载更多.png)
+​	![](https://github.com/Fdaxiong/Tkphp/blob/master/img/ajax加载更多.png)
 
 ### 收货地址![]()
 
-![](C:\Users\88487\Desktop\项目图片\收货地址.png)
+![](https://github.com/Fdaxiong/Tkphp/blob/master/img/收货地址.png)
 
 
 
 ### 收货评价
 
-![](C:\Users\88487\Desktop\项目图片\待收货.png)
+![](https://github.com/Fdaxiong/Tkphp/blob/master/img/待收货.png)
 
-![](C:\Users\88487\Desktop\项目图片\订单付款.png)
+![](https://github.com/Fdaxiong/Tkphp/blob/master/img/订单付款.png)
 
 ### 修改密码
 
-![](C:\Users\88487\Desktop\项目图片\修改密码图.png)
+![](https://github.com/Fdaxiong/Tkphp/blob/master/img/修改密码图.png)
 
 ![](
