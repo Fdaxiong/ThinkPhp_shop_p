@@ -1,0 +1,27 @@
+.login { /* 按钮美化 */
+		width: 180px; /* 宽度 */
+		height: 40px; /* 高度 */
+		border-width: 0px; /* 边框宽度 */
+		border-radius: 3px; /* 边框半径 */
+		background:  #ff9900; /* 背景颜色#1E90FF */
+		cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+		outline: none; /* 不显示轮廓线 */
+		font-family: Microsoft YaHei; /* 设置字体 */
+		color: white; /* 字体颜色 */
+		font-size: 17px; /* 字体大小 */
+		}
+
+
+.Bj_bj	{
+		background-image:url("../inmeg/bj.jpg");/*引入背景图*/
+		background-size: cover;/*背景图大小居中*/
+		}
+
+.YD
+		{
+			margin-left:10%;margin-top:11%;
+		}
+.ZT{
+		font-size: 10px; /* 字体大小 */
+		}
+

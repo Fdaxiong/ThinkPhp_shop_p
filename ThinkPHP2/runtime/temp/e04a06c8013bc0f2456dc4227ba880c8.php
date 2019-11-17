@@ -1,0 +1,80 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\phpStudy\PHPTutorial\WWW\ThinkPHP2/application/index\view\index\setmm.html";i:1546412334;}*/ ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet">
+	<title>修改登录密码</title>
+</head>
+<body>
+	<!-- <form action="<?php echo url('index/setmm'); ?>" method="post"> -->
+	<ul class="list-group">
+	  <li class="list-group-item active">修改登录密码</li>
+	  <li class="list-group-item">
+	  	<div class="input-group mb-3">
+  			<div class="input-group-prepend">
+    			<span class="input-group-text" id="inputGroup-sizing-default">原密码</span>
+  		</div>
+  		<input type="password" class="form-control original_paw" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="original_paw">
+		</div>
+	  </li>
+	  <li class="list-group-item">
+	  	<div class="input-group mb-3">
+  			<div class="input-group-prepend">
+    			<span class="input-group-text " id="inputGroup-sizing-default">新密码</span>
+  		</div>
+  		<input type="password" class="form-control new_paw" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="new_paw">
+		</div>
+	  </li>
+	  <li class="list-group-item"><div class="input-group mb-3">
+  			<div class="input-group-prepend">
+    			<span class="input-group-text" id="inputGroup-sizing-default">再输入一次新密码</span>
+  		</div>
+  		<input type="password" class="form-control new_paw2" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="new_paw2">
+		</div>
+	</li>
+	  <li class="list-group-item">	  	
+  			<button type="submit" class="btn btn-secondary btn-lg btn-block xg">修改</button>
+	</li>
+	</ul>
+	<!-- </form> -->
+	<script type="text/javascript">
+		$(".xg").click(function(){ 
+		var original_paw = $(".original_paw").val();
+		var new_paw = $(".new_paw").val();
+		var new_paw2 = $(".new_paw2").val();
+
+		if (original_paw=="" || new_paw=="" || new_paw2=="") {
+		        //判断是否为空
+				alert("原密码/新密码/不能为空")
+		}else{
+			if (new_paw!=new_paw2) {
+			//判断两次密码是否一致
+				alert("两次密码不一样,请重新输入")
+			}else{
+				  $.ajax({
+				      type:"post",
+				      url:"<?php echo url('index/ajax_newpaw'); ?>",
+				      data:"original_paw="+original_paw+"&new_paw="+new_paw+"&new_paw2="+new_paw2,
+				      success:function(data){
+					      	if (data==0) {
+					      		location.href="<?php echo url('index/index'); ?>";	
+					      	}else if (data==1) {
+				      			alert("修改成功");
+				      			location.href="<?php echo url('index/personal'); ?>";
+				      		}else if (data==2) {
+				      			alert('原密码错误');
+				      		}    
+				      	}
+				    });
+			}	
+		};
+
+	  
+	    		
+	
+	});	
+	</script>
+</body>
+</html>
