@@ -1,0 +1,3 @@
+*.js linguist-language=ThinkPhp；
+*.css linguist-language=ThinkPhp；
+*.html linguist-language=ThinkPhp
